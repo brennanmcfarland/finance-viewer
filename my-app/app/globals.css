@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  min-height: 100vh
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --accent-rgb: 255, 150, 50;
+    --background-start-rgb: 20, 20, 20;
+    --background-end-rgb: 65, 15, 100;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      90%,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+h2 {
+  color: rgb(var(--accent-rgb));
+}
+
+.global-footer {
+  height: 15vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  color: rgb(var(--accent-rgb));
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+nav a {
+  padding: 16px;
+  flex: auto;
+}
+
+.transaction {
+  padding: 20px;
+}
+
+.date-column {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.description-column {
+  max-width: 650px;
+  text-wrap: pretty;
+}
+
+.money-column {
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  padding-right: 40px;
+}
+
+tr {
+  border: solid;
+  border-width: 1px 0;
+  border-color: rgb(100, 100, 100);
+  color: rgb(200, 200, 200);
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}

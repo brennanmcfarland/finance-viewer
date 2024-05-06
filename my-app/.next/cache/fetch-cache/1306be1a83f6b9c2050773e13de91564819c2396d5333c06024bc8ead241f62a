@@ -1,0 +1,1 @@
+{"kind":"FETCH","data":{"headers":{"connection":"close","content-length":"18","content-type":"text/html; charset=utf-8","date":"Wed, 10 Apr 2024 00:02:20 GMT","server":"Werkzeug/3.0.2 Python/3.10.12"},"body":"SGVsbG8gZnJvbSBzZXJ2ZXIh","status":200,"url":"http://127.0.0.1:5000/test"},"revalidate":31536000,"tags":[]}
