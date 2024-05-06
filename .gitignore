@@ -1,1 +1,3 @@
 sources/*
+**/dist/*
+**/node_modules/*
